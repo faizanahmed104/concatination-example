@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+function consoleItemsWithAdditionalString(additionalString, thisArray){
+for (var i=0; i<thisArray.length; i++){
+    a = thisArray [i] + additionalString;
+}
+    document.getElementById("demo").innerHTML = a;
+
+}
+
+
+consoleItemsWithAdditionalString("developer", ["anas", "faizan", "usama"]);
+
+</script>
+
+</body>
+</html>
