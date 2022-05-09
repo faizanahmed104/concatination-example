@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+
+</style>
+</head>
 <body>
+<div id="app">
+</div>
+<script>
+let langs = ['name1','name2','name3','hh','sadsa'];
 
-<p id="demo"></p>
+let nodes = langs.map(lang => {
+    let para = document.createElement('p');
+    para.textContent = lang;
+    para.setAttribute("style", "background-color:red;")
+    return para;
+});
 
-<script> 
-// Comment addded
-function consoleItemsWithAdditionalString(additionalString, thisArray){
-for (var i=0; i<thisArray.length; i++){
-    a = thisArray [i] + additionalString;
-}
-    document.getElementById("demo").innerHTML = a;
-
-}
-
-
-consoleItemsWithAdditionalString("developer", ["anas", "faizan", "usama"]);
-
+app.append(...nodes);
 </script>
 
 </body>
 </html>
+
